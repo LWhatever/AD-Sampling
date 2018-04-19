@@ -1,3 +1,4 @@
+//updated in 2018/4/20/0:50
 #include <msp430.h>
 
 #define start 0x028000
