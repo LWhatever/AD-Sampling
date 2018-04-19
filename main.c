@@ -28,7 +28,7 @@ void flash_write()
 
 void GPIO_Init()
 {
-	P4DIR |= 0xff;
+	P4DIR |= 0xff;		//pin to DA0832
 	P4OUT &= ~0xff;
 	P6DIR |= BIT6;
 	P5DIR |= BIT0 + BIT1 + BIT6;
@@ -39,12 +39,12 @@ void GPIO_Init()
 	P2OUT &= ~BIT7;
 	P8DIR |= BIT0;
 	P8OUT &= ~BIT0;
-
-	P3DIR |= BIT2;
+	
+	P3DIR |= BIT2;		//used to see the sampleing rete
 	P3OUT &= ~BIT2;
 
 
-	P2REN |= BIT6;
+	P2REN |= BIT6;		//a key to change mode
 	P2OUT |= BIT6;
 }
 
